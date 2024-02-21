@@ -33,7 +33,7 @@ def dl(name,season,url,aria2_jsonrpc_url,secret_token):
     service = Service("C:\\app\\chromedriver.exe")
     driver = webdriver.Chrome(service=service, seleniumwire_options=seleniumwire_options, options=chrome_options)
     
-    dir = f"/volume2/Elliot Wu/阿里云盘/公共同步/动漫/{name}/S0{season}"
+    dir = f"/动漫/{name}/S0{season}"
 
     #下载部分
     driver.get(url)
